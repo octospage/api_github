@@ -1,9 +1,11 @@
 import React from 'react'; //rsc
-import 'App.less';
+import './app.less';
+
+
 const App = () => {
     return (
-        <div className="App">
-            It a ALIve
+        <div className="app">
+            test text
         </div>
     );
 };
