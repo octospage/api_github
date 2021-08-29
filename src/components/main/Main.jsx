@@ -21,9 +21,10 @@ const Main = () => {
 
     useEffect(() => {
         dispatch(getRepos(searchValue, currentPage, perPage))
+        window.scrollTo(0,0)
     }, [currentPage])
 
-    function searchHandler(){
+     function searchHandler(){
         dispatch(setCurrentPage(1))
         dispatch(getRepos(searchValue, currentPage, perPage))
     }
