@@ -13,6 +13,7 @@ const Main = () => {
     const currentPage = useSelector(state => state.repos.currentPage);
     const totalCount = useSelector(state => state.repos.totalCount);
     const perPage = useSelector(state => state.repos.perPage);
+    const isFetchError = useSelector(state => state.repos.isFetchError);
     const [searchValue, setSearchValue] = useState('');
     const pagesCount = Math.ceil(totalCount/perPage);
     const pages = [];

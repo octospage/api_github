@@ -7,7 +7,7 @@ const Repo = (props) => {
     return (
         <section className="repo">
             <div  className="repo__header">
-                <h5 className="repo__name"><NavLink to="/card">{repo.name}</NavLink></h5>
+                <h5 className="repo__name"><NavLink to={`/card/${repo.owner.login}/${repo.name}`}>{repo.name}</NavLink></h5>
                 <div className="repo__stars">Количество звезд: {repo.stargazers_count}</div>
             </div>
             <div className="repo__info">
