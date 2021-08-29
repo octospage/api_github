@@ -1,0 +1,46 @@
+.search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0;
+  border-radius: 10px;
+
+  &__input {
+    padding: 15px;
+    width: 100%;
+  }
+
+  &__button {
+    padding: 15px;
+    background: #ba92ff;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.fetching {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 30vh auto;
+  border: 3px dashed #ba92ff;
+  animation-name: result-fetching;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes result-fetching {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1.5);
+
+  }
+}
